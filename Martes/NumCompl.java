@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class NumCompl{
-	private double real;
-	private double img;
+	public double real;
+	public double img;
 
 	public NumCompl(){}
 
@@ -13,15 +13,15 @@ public class NumCompl{
 		this.img = img;
 	}
 
-	public NumCompl sumar (NumCompl a, NumCompl b)
+	public static NumCompl sumar (NumCompl a, NumCompl b)
 	{
 		NumCompl c = new NumCompl();
 		c.real = a.real + b.real;
-		c.img = a.img + c.img;
+		c.img = a.img + b.img;
 		return c;
 	}
 
-	public NumCompl restar (NumCompl a, NumCompl b)
+	public static NumCompl restar (NumCompl a, NumCompl b)
 	{
 		NumCompl c = new NumCompl();
 		c.real = a.real - b.real;
