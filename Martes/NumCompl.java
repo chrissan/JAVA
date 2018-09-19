@@ -29,7 +29,7 @@ public class NumCompl{
 		return c; 
 	}
 
-	public NumCompl multi (NumCompl a, NumCompl b)
+	public static NumCompl multi (NumCompl a, NumCompl b)
 	{
 		NumCompl c = new NumCompl();
 		c.real = (a.real * b.real) - (a.img * b.img);
